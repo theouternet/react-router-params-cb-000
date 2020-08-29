@@ -8,7 +8,7 @@ import MoviesNew from './MoviesNew';
 const MoviesPage = ({ match, movies }) =>
   <div>
     <MoviesList movies={movies} />
-    <Switch> {/* Make sure to wrap all of your Routes as children of the Switch component*/ }
+    <Switch> {}
       <Route path={`${match.url}/new`} component={MoviesNew} />
       <Route path={`${match.url}/:movieId`} component={MovieShow}/>
       <Route exact path={match.url} render={() => (
